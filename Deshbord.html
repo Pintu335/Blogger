@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interview Blogger</title>
+    <!--            CUSTOM CSS LINK        -->
+    <link rel="stylesheet" href="./style.css" />
+    <!--                FONTAWESOME LINK     -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+ 
+
+  </head>
+  <body>
+    <nav>
+        <div class="container nav-container">
+          <a href="./index.html" class="logo"
+            ><h3>Interview <span> Blogger</span></h3></a
+          >
+          <ul class="nav-link">
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./sign-in.html">Sign In</a></li>
+            <li>
+              <div class="nav-profile">
+                <div class="profile-img">
+                  <img src="IMG1.jpg" alt="" />
+                </div>
+                <ul>
+                  <li><a href="">Deshboard</a></li>
+                  <li><a href="">Log Out</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <button class="phone-button Open"><i class="fa fa-bars"></i></button>
+          <button class="phone-button Close"><i class="fa fa-close"></i></button>
+        </div>
+      </nav>
+
+
+
+
+<!-- start dashboard -->
+
+<section class="Deshboard">
+    <div class="container deshboard-container">
+        <aside>
+            <ul>
+                <li><a href="add-post.html"><i class="fa fa-pen"></i>
+                <h5>
+                Add Post
+                </h5></a></li>
+                <li><a href="deshboard.html" class="active"><i class="fa fa-pen"></i>
+                <h5>
+                Manage post
+                </h5></a></li>
+                <li><a href="add-user.html"><i class="fa fa-user-plus"></i>
+                <h5>
+                Add User
+                </h5></a></li>
+                <li><a href="manage-user.html" ><i class="fa fa-users"></i>
+                <h5>
+                manage user
+                </h5></a></li>
+                <li><a href="add-category.html"><i class="fa fa-mobile"></i>
+                <h5>
+                Add Category
+                </h5></a></li>
+                <li><a href="manage-category.html" ><i class="fa fa-list"></i>
+                <h5>
+                Manage Category
+                </h5></a></li>
+            </ul>
+        </aside>
+        <main>
+            <h2>Manage Posts</h2>
+           <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Category</th>
+                    
+                   
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="post-1">
+                    <td>cisco</td>
+                    <td>Networking</td>
+                    <td><a href="edit-category.html" class="btn sm">Edit</a></td>
+                    <!-- <td><a href="edit-category.html" class="btn sm danger">Delete</a></td> -->
+                    <!-- <td><a href="#" class="btn sm danger" id="delete-post-1">Delete</a></td> -->
+                    <td><a href="#" class="btn sm danger" id="delete-post-1" data-post-id="1">Delete</a></td>
+
+                </tr>
+                <tr id="post-1">
+                    <td>wipro</td>
+                    <td>frontend</td>
+                    <td><a href="edit-category.html" class="btn sm">Edit</a></td>
+                    <!-- <td><a href="edit-category.html" class="btn sm danger">Delete</a></td> -->
+                    <!-- <td><a href="#" class="btn sm danger" id="delete-post-1">Delete</a></td> -->
+                    <td><a href="#" class="btn sm danger" id="delete-post-1" data-post-id="1">Delete</a></td>
+
+                </tr>
+                <tr id="post-1">
+                    <td>Microsoft</td>
+                    <td>frontend</td>
+                    <td><a href="edit-category.html" class="btn sm">Edit</a></td>
+                    <!-- <td><a href="edit-category.html" class="btn sm danger">Delete</a></td> -->
+                    <!-- <td><a href="#" class="btn sm danger" id="delete-post-1">Delete</a></td> -->
+                    <td><a href="#" class="btn sm danger" id="delete-post-1" data-post-id="1">Delete</a></td>
+
+                </tr>
+                <tr id="post-1">
+                    <td>Persistent</td>
+                    <td>Backend</td>
+                    <td><a href="edit-category.html" class="btn sm">Edit</a></td>
+                    <!-- <td><a href="edit-category.html" class="btn sm danger">Delete</a></td> -->
+                    <!-- <td><a href="#" class="btn sm danger" id="delete-post-1">Delete</a></td> -->
+                    <td><a href="#" class="btn sm danger" id="delete-post-1" data-post-id="1">Delete</a></td>
+
+                </tr>
+                <tr id="post-1">
+                    <td>Tcs</td>
+                    <td>Java</td>
+                    <td><a href="edit-category.html" class="btn sm">Edit</a></td>
+                    <!-- <td><a href="edit-category.html" class="btn sm danger">Delete</a></td> -->
+                    <!-- <td><a href="#" class="btn sm danger" id="delete-post-1">Delete</a></td> -->
+                    <td><a href="#" class="btn sm danger" id="delete-post-1" data-post-id="1">Delete</a></td>
+
+                </tr>
+             
+            </tbody>
+           </table>
+        </main>
+    </div>
+</section>
+
+<!-- end dashboard -->
+<footer>
+    <div class="footer-social">
+      <a href=""><i class="fab fa-facebook"></i></a>
+    <a href=""><i class="fab fa-instagram"></i></a>
+    <a href=""><i class="fab fa-twitter"></i></a>
+    <a href=""><i class="fab fa-linkedin"></i></a>
+    </div>
+    <div class="container footer-container">
+      <article>
+        <h4>Category</h4>
+        <ul>
+         <li> <a>Frontend Developer</a></li>
+          <li><a> Backend Developer </a></li>
+         <li> <a>Devops</a></li> 
+         <li> <a>Cyber security</a></li>
+         <li> <a>Networking</a></li> 
+         <li> <a>Android Developer</a></li>
+         <li>  <a>Video Editior</a></li>
+          <li><a>Graphic Designer</a></li>
+          <li><a>Artificial Inteligence</a></li>
+        </ul>
+      </article>
+      <article>
+        <h4>
+        Support
+        </h4>
+        <ul>
+       <li><a href="">online Support</a></li>
+       <li><a href="">Email</a></li>
+       <li><a href="">Phone Number</a></li>
+       <li><a href="">Social Support</a></li>
+       <li><a href="">Location</a></li>
+        </ul>
+      </article>
+      <article>
+        <h4>
+       Parmalinks
+        </h4>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Contact</a></li>
+
+          
+        </ul>
+      </article>
+    </div>
+
+  </footer>
+  <!-- end footer -->
+  <script src="main.js"></script>
+</body>
+
+</html>
